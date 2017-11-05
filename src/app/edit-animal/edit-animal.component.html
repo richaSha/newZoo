@@ -1,0 +1,51 @@
+<div *ngIf="selectedInfo">
+  <ul class="list-wrapper">
+    <li><span (click)="selected('Species')"></span><b>Species: </b>{{selectedInfo.Species}}</li>
+    <li><span (click)="selected('Name')"></span><b>Name: </b>{{selectedInfo.Name}}</li>
+    <li><span (click)="selected('Age')"></span><b>Age: </b>{{selectedInfo.Age}}</li>
+    <li><span (click)="selected('Diet')"></span><b>Diet: </b>{{selectedInfo.Diet}}</li>
+    <li><span (click)="selected('Location')"></span><b>Location: </b>{{selectedInfo.Location}}</li>
+    <li><span (click)="selected('Caretakers')"></span><b>Caretakers: </b>{{selectedInfo.Caretakers}}</li>
+    <li><span (click)="selected('Sex')"></span><b>Sex: </b>{{selectedInfo.Sex}}</li>
+    <li><span (click)="selected('Likes')"></span><b>Likes: </b>{{selectedInfo.Likes}}</li>
+    <li><span (click)="selected('Dislikes')"></span><b>Dislikes: </b>{{selectedInfo.Dislikes}}</li>
+    <hr>
+    <div class="form-group">
+      <label>New Species</label>
+      <input type="text" class="form-control" [(ngModel)]="selectedInfo.Species">
+    </div>
+    <div class="form-group" >
+      <label>New Name</label>
+      <input type="text" class="form-control" [(ngModel)]="selectedInfo.Name">
+    </div>
+    <div class="form-group" >
+      <label>New Age</label>
+      <input type="text" class="form-control" [(ngModel)]="selectedInfo.Age">
+    </div>
+    <div class="form-group" >
+      <label>New Diet</label>
+      <input type="text" class="form-control" [(ngModel)]="selectedInfo.Diet">
+    </div>
+    <div class="form-group" >
+      <label>New Location</label>
+      <input type="text" class="form-control" [(ngModel)]="selectedInfo.Location">
+    </div>
+    <div class="form-group" >
+      <label>New Caretakers</label>
+      <input type="text" class="form-control" [(ngModel)]="selectedInfo.Caretakers">
+    </div>
+    <div class="form-group" >
+      <label>New Sex</label>
+      <input type="text" class="form-control" [(ngModel)]="selectedInfo.Sex">
+    </div>
+    <div class="form-group" >
+      <label>New Likes</label>
+      <input type="text" class="form-control" [(ngModel)]="selectedInfo.Likes">
+    </div>
+    <div class="form-group" >
+      <label>New Dislikes</label>
+      <input type="text" class="form-control" [(ngModel)]="selectedInfo.Dislikes">
+    </div>
+    <button type="button" class="btn btn-success" (click)="editingDone()">Edit</button>
+  </ul>
+</div>

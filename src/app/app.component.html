@@ -1,3 +1,17 @@
-<h1>
-  {{title}}
-</h1>
+<header class="jumbotron">
+  <h1>Zoo</h1>
+</header>
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <div class="navbar-brand">Zoo</div>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a routerLink="">Home</a></li>
+      <li><a routerLink="new">Add Animal</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

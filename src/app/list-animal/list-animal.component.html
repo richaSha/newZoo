@@ -1,0 +1,24 @@
+<div>
+  <select #animalSelection (change)="selctionChange(animalSelection.value)">
+    <option value="all">All Animals</option>
+    <option value="young">Young Animals</option>
+    <option value="mature">Mature Animal</option>
+  </select>
+</div>
+<div *ngFor='let animal of animalList | appFilter:filerByInfo' >
+  <ul class="list-wrapper" *ngIf='!editedMode'>
+    <button (click)="editInfo(animal)" >
+      <span class="glyphicon glyphicon-pencil"></span>
+    </button>
+    <li><b>Species: </b>{{animal.Species}}</li>
+    <li><b>Name: </b>{{animal.Name}}</li>
+    <li><b>Age: </b>{{animal.Age}}</li>
+    <li><b>Diet: </b>{{animal.Diet}}</li>
+    <li><b>Location: </b>{{animal.Location}}</li>
+    <li><b>Caretakers: </b>{{animal.Caretakers}}</li>
+    <li><b>Sex: </b>{{animal.Sex}}</li>
+    <li><b>Likes: </b>{{animal.Likes}}</li>
+    <li><b>Dislikes: </b>{{animal.Dislikes}}</li>
+  </ul>
+</div>
+<app-edit-animal [selectedInfo]='editAnimal' (editInfo)="doneEdit()"></app-edit-animal>

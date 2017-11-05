@@ -1,0 +1,39 @@
+<form>
+  <div class="form-group">
+    <label>New Species</label>
+    <input #Species type="text" class="form-control">
+  </div>
+  <div class="form-group" >
+    <label>New Name</label>
+    <input #Name type="text" class="form-control">
+  </div>
+  <div class="form-group" >
+    <label>New Age</label>
+    <input #Age type="text" class="form-control">
+  </div>
+  <div class="form-group" >
+    <label>New Diet</label>
+    <input #Diet type="text" class="form-control">
+  </div>
+  <div class="form-group" >
+    <label>New Location</label>
+    <input #Location type="text" class="form-control">
+  </div>
+  <div class="form-group" >
+    <label>New Caretakers</label>
+    <input #Caretakers type="text" class="form-control">
+  </div>
+  <div class="form-group" >
+    <label>New Sex</label>
+    <input #Sex type="text" class="form-control">
+  </div>
+  <div class="form-group" >
+    <label>New Likes</label>
+    <input #Likes type="text" class="form-control">
+  </div>
+  <div class="form-group" >
+    <label>New Dislikes</label>
+    <input #Dislikes type="text" class="form-control">
+  </div>
+  <button type="button" class="btn btn-success" (click)="newAnimal(Species.value, Name.value, Age.value, Diet.value, Location.value, Caretakers.value, Sex.value, Likes.value, Dislikes.value)">Add</button>
+</form>

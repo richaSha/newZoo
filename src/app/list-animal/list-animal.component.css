@@ -1,0 +1,19 @@
+.list-wrapper{
+  background: #17c19d;
+  padding: 3rem;
+  text-align: -webkit-left;
+  color: #fff;
+  border: 1px solid #52fdd9;
+  border-radius: 1rem;
+  list-style: none;
+  position: relative;
+}
+.list-wrapper button{
+  position: absolute;
+  top: 2rem;
+  right: 3rem;
+  border-radius: 1rem;
+  background: #0f9875;
+  border: 1px solid #02614d;
+  color: #fffdfd;
+}
